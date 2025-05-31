@@ -640,3 +640,9 @@ section,
 .services .service-item.item-pink:hover .icon path {
   fill: #f3268c;
 }
+
+.hof-img {
+  width: 50px;   
+  height: 50px;
+  object-fit: contain;
+}
