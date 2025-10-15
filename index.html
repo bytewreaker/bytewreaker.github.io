@@ -55,6 +55,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preload" as="image" href="assets/img/hero.webp" fetchpriority="high" />
 
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet" />
@@ -113,14 +114,9 @@
     <main class="main">
       <!-- Hero Section -->
       <section id="hero" class="hero section light-background">
-        <picture>
-          <source srcset="assets/img/hero.webp" type="image/webp" />
-          <img
-            src="assets/img/hero.jpg"
-            alt="Hero Image"
-            class="img-fluid w-100"
-          />
-        </picture>
+        <img src="assets/img/hero.webp" alt="hero" class="img-fluid w-100"
+          fetchpriority="high" loading="eager"/>
+
         <div class="container" data-aos="zoom-out">
           <div class="row justify-content-center">
             <div class="col-lg-9">
